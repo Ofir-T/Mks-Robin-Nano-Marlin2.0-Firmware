@@ -1253,7 +1253,7 @@
 
   // Set one or more commands to execute on filament runout.
   // (After 'M412 H' Marlin will ask the host to handle the process.)
-  #define FILAMENT_RUNOUT_SCRIPT "M600"
+  #define FILAMENT_RUNOUT_SCRIPT "M600" // M600 is the real deal. M25 is just a workaround beacuse m600 doesn't work with the lvgl right now (it does with marlin_color_UI)
 
   // After a runout is detected, continue printing this length of filament
   // before executing the runout script. Useful for a sensor at the end of
@@ -2162,7 +2162,7 @@
 // MKS LCD12864A/B with graphic controller and SD support. Follows MKS_MINI_12864 pinout.
 // https://www.aliexpress.com/item/33018110072.html
 //
-//#define MKS_LCD12864
+#define MKS_LCD12864
 
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
