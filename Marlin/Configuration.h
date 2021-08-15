@@ -121,7 +121,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -1253,7 +1253,7 @@
 
   // Set one or more commands to execute on filament runout.
   // (After 'M412 H' Marlin will ask the host to handle the process.)
-  #define FILAMENT_RUNOUT_SCRIPT "M600" // M600 is the real deal. M25 is just a workaround beacuse m600 doesn't work with the lvgl right now (it does with marlin_color_UI)
+  #define FILAMENT_RUNOUT_SCRIPT "M25" // M600 is the real deal. M25 is just a workaround beacuse m600 doesn't work with the lvgl right now (it does with marlin_color_UI)
 
   // After a runout is detected, continue printing this length of filament
   // before executing the runout script. Useful for a sensor at the end of
